@@ -1,58 +1,24 @@
-# Cross-references {#cross}
+# 小雅 {-} 
 
-Cross-references make it easier for your readers to find and link to elements in your book.
+## 鹿鸣 {-}
 
-## Chapters and sub-chapters
+### 《诗序》{-}
+《鹿鸣》，燕群臣嘉宾也。既饮食之，又实币帛筐篚以将其厚意，然后忠臣嘉宾得尽其心矣。
 
-There are two steps to cross-reference any heading:
+### 诗文 {-}
+“呦呦鹿鸣，食野之苹。
+我有嘉宾，鼓瑟吹笙。
+吹笙鼓簧，承筐是将。
+人之好我，示我周行。
 
-1. Label the heading: `# Hello world {#nice-label}`. 
-    - Leave the label off if you like the automated heading generated based on your heading title: for example, `# Hello world` = `# Hello world {#hello-world}`.
-    - To label an un-numbered heading, use: `# Hello world {-#nice-label}` or `{# Hello world .unnumbered}`.
+呦呦鹿鸣，食野之蒿。
+我有嘉宾，德音孔昭。
+视民不恌，君子是则是效。
+我有旨酒，嘉宾式燕以敖。
 
-1. Next, reference the labeled heading anywhere in the text using `\@ref(nice-label)`; for example, please see Chapter \@ref(cross). 
-    - If you prefer text as the link instead of a numbered reference use: [any text you want can go here](#cross).
+呦呦鹿鸣，食野之芩。
+我有嘉宾，鼓瑟鼓琴。
+鼓瑟鼓琴，和乐且湛。
+我有旨酒，以燕乐嘉宾之心。
 
-## Captioned figures and tables
-
-Figures and tables *with captions* can also be cross-referenced from elsewhere in your book using `\@ref(fig:chunk-label)` and `\@ref(tab:chunk-label)`, respectively.
-
-See Figure \@ref(fig:nice-fig).
-
-
-```r
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
-
-<div class="figure" style="text-align: center">
-<img src="02-cross-refs_files/figure-epub3/nice-fig-1.png" alt="Plot with connected points showing that vapor pressure of mercury increases exponentially as temperature increases." width="80%" />
-<p class="caption">(\#fig:nice-fig)Here is a nice figure!</p>
-</div>
-
-Don't miss Table \@ref(tab:nice-tab).
-
-
-```r
-knitr::kable(
-  head(pressure, 10), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
-
-
-
-Table: (\#tab:nice-tab)Here is a nice table!
-
-| temperature| pressure|
-|-----------:|--------:|
-|           0|   0.0002|
-|          20|   0.0012|
-|          40|   0.0060|
-|          60|   0.0300|
-|          80|   0.0900|
-|         100|   0.2700|
-|         120|   0.7500|
-|         140|   1.8500|
-|         160|   4.2000|
-|         180|   8.8000|
+### 注释
